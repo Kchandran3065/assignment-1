@@ -1,0 +1,359 @@
+/*kiran chandran8913065*/
+html{
+    /* font shorthand 6 propteries  
+        font-style - normal, italic, oblique
+        font-variant - normal, small-caps
+        font-weight normal - bold,  100 - 900
+        font-size/line-height
+        font-family
+
+        ;Times, "Times New Roman", Georgia, serif
+        "Lucida Console", Courier, monospace;
+    */
+    /*absolute units px*/
+    font : italic small-caps bold 20px/1.5 Verdana, Arial, Helvetica, sans-serif ;
+    font-variant : normal;
+    font-style : normal;
+    font-family : monospace;
+    
+
+     color : rgba(165, 42, 42, 0.986); /* Set text color to green */
+}
+body{
+
+    width : 100%; /*sets the width of the body % relative to parent element*/
+    max-width : 1200px;/* sets the width of the body absolute units px*/
+    margin : auto; /*margin set to auto for right and left center elemnts inside their parent*/
+    padding : 1.25rem; /*rem relative to root element font size*/
+
+  
+
+}
+/*named colour*/
+/*6-HEX*/
+p{
+    color : #b3e0bfd6;
+}
+/*3-HEX*/
+h2{
+    color: rgb(117, 132, 25); /* set colour as green */
+}
+p{
+   
+    color: rgb(136, 19, 78); /* set colour as red*/
+}
+/*RGB red green blue*/
+p{
+    color : rgb(238, 130, 238);
+}
+/*RGBA alpha*/
+p{
+    color : rgba(255, 99, 71, 0.5);
+}
+/*HSL hue saturation lightness*/
+p{
+    color : hsl(147, 50%, 47%);
+}
+/*HSLA alpha*/
+p{
+    color : hsla(9, 100%, 64%, 0.6);
+}
+
+/*h1 element selector*/
+h1{
+    color : red !important; /* Set text color to red */
+    text-align: center;/*center-align text*/
+
+}
+/*h1 element selector*/
+h1{
+    color : rgb(157, 11, 14); /* Set text color to red*/
+}
+/*id selector*/
+#main-heading{
+    color : purple; /* Set text color to purple */
+}
+/*class selector*/
+.headings{
+    color : rgb(51, 255, 0); /* Set text color to green*/
+}
+#video{
+    font-size : 10px;/*parent element of the video and iframe*/
+}
+iframe, video{
+  
+    width : 50%;/*sets the width of the images and videos % relative to parent element*/
+    height : 50%;/*sets the height of the images and videos % relative to parent element*/
+    height : 10em; /*em relative to parent element font size*/
+}
+/*descendant selector*/
+main p{
+    color : rgb(255, 0, 128);
+}
+/*child selector*/
+section > p{
+    color : rgb(139, 130, 174);
+}
+/*General sibling selector*/
+h2 ~ p{
+    color : rgb(255, 0, 38);
+}
+/*Ajecent sibling selector*/
+h2 + p{
+    color : rgb(105, 10, 10);
+}
+/*multiple selector*/
+h2, h6, #span-h, .red-p, footer p{
+
+    color : hsl(146.5, 72.2%, 14.1%);
+
+}
+/*id selector - descendant selector*/
+#section1 p{
+    color : #866c3c;
+}
+/*type selector, child selector, class selector*/
+main > .headings{
+    color :rgb(238, 130, 238);
+}
+
+section {
+    background-color:  hsla(147, 40%, 90%, 0.1); /*sets background color*/
+}
+section {
+    background-color: rgba(252, 252, 252, 0.1); /*sets background color*/
+}
+section{ 
+    background :hsl(147, 50%, 47%); /*sets background color*/
+}
+
+header{
+    /*sets background color with a linear gradient */
+    background-image: linear-gradient(red 20%, white 10%, blue 80%) !important;
+   /* height : 20vh; 
+    width : 20vw; */
+
+
+    /******BOX MODEL*****/
+    /********MARGINS****/
+    margin-top : 2rem;
+    margin-bottom : 1rem;
+    
+    margin-left : .4rem;
+    margin-right : 1.5rem;
+    margin : 1rem 1.5rem 1rem .4rem;
+    margin : 1rem 1.5rem;
+   
+    margin : 1rem 1.5rem .5rem;
+    margin : 1rem;
+ /********PADDING****/
+    padding-top : 1rem;
+    padding-bottom : 1rem;
+    padding-left : .4rem;
+    padding-right : 1.5rem;
+    padding : 1rem 1.5rem 1rem .5rem;
+    padding : 1rem 1.5rem;
+   
+    padding : 1rem 1.5rem .5rem;
+    padding : 1rem;
+    /*****BORDERS******/
+    border-style : dashed;
+    border-bottom-style : solid;/*sets the styleof the border*/
+    border-width : .25rem; /*sets the width of the border*/
+    border-bottom-width: .5rem; /*sets the width of the border-bottom*/
+    border-color :black; /*sets the color of the border*/
+    border-top-color : white; /*sets the color of the border-top*/
+
+    border : 1rem solid black;
+    border-radius : 1rem;
+   
+
+}
+.main-section-figure{
+   
+   border-radius : 1rem;
+   text-align: center; /*center-align text*/
+  
+
+}
+#relative-path-image{
+    background-color: aliceblue;/*sets background color*/
+    border : .25rem solid green; /*border shorthand property width, style colour  */
+    color :green;
+}
+#absolute-path-image{
+    background-color: aqua;/*sets background color*/
+    border : .25rem solid blue; /*border shorthand property width, style colour  */
+    color : blue;
+}
+.main-section-figure img{
+    width : 80%;
+    height : 90%;
+    padding : .5rem;
+    border-radius : 1rem; /*rounds the corners of the border*/
+   
+}
+main {
+    margin-top : 2rem;
+   
+}
+#quote{
+    
+    border : .5rem solid #b58;
+    /*Sets box shawdow*/
+    box-shadow: 10px 10px 8px grey;
+    /*Specify a horizontal and a vertical shadow*/
+    box-shadow: 10px 10px;
+    box-shadow: 10px 10px lightblue;/* - colour*/
+    box-shadow: 10px 10px 5px lightblue;/* - blur*/
+    box-shadow: 10px 10px 5px 12px lightblue; /* spread radius of the shadow*/
+ 
+}
+
+table, th, td {
+    border: 1px solid;
+  }
+
+  
+  /* Nav */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+  }
+  
+  nav ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-style: italic;
+    font-variant: small-caps;
+    color: #3333335e;
+    background-color: #ffffffde;
+    border: 1px solid #333;
+  }
+  
+  nav ul li a:hover {
+    color: #892a818b;
+    background-color: #333;
+  }
+  
+  /* layout for nav */
+  #nav {
+    float: left;
+    width: 50%;
+  }
+  
+  #main {
+    float: left;
+    width: 70%;
+  }
+  
+  #aside {
+    float: left;
+    width: 30%;
+  }
+  
+  footer {
+    clear: both;
+  }
+  
+  /* Aside */
+  aside {
+    text-align: center;
+  }
+  
+  aside h2 {
+    font-variant: small-caps;
+    color: #333;
+  }
+  
+  aside table {
+    border: 1px solid #333;
+  }
+  
+  aside th,
+  aside td {
+    font-weight: bold;
+    font-style: italic;
+    font-variant: small-caps;
+    color: #333;
+    text-align: center;
+  }
+  
+  aside a {
+    text-decoration: none;
+    color: #333;
+    line-height: 1.5;
+  }
+  
+  aside a:hover {
+    color: #fff;
+    background-color: #333;
+  }
+  
+  /* Form CSS */
+  form {
+    padding: 20px;
+    margin: 20px 0;
+  }
+  
+  label {
+    color: #333;
+    font-variant: small-caps;
+    font-weight: bold;
+    text-align: right;
+    display: inline-block;
+    width: 150px;
+    margin-right: 10px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 250px;
+    padding: 5px;
+    margin: 5px 0;
+  }
+  
+  /* Responsive CSS */
+  @media screen and (max-width: 768px) {
+    html {
+      font-size: 14px;
+    }
+  
+    #nav,
+    #main,
+    #aside {
+      float: none;
+      width: 100%;
+    }
+  
+    aside {
+      text-align: left;
+    }
+  }
+  
+  @media screen and (max-width: 580px) {
+    html {
+      font-size: 12px;
+    }
+  }
+  
+    
+         
+       
+
+
+
+
+
+
+
+
+
